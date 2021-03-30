@@ -17,6 +17,7 @@ import zicomponent from '@/components/zicomponent'
 import fucomponent from '@/components/fucomponent'
 import Demo4 from '@/components/Demo4'
 import Demo5 from '@/components/Demo5'
+import PersonManagementDemo from '@/components/PersonManagementDemo'
 
 Vue.use(Router)
 
@@ -145,6 +146,14 @@ export default new Router({
           title:'Demo5--Vue内置指令学习',
         },
         component:Demo5,
+    },
+    {
+        path:'/PersonManagementDemo',
+        name:'/PersonManagementDemo',
+        meta:{
+          title:'人事管理系统',
+        },
+        component:PersonManagementDemo
     }
   ]
 })
